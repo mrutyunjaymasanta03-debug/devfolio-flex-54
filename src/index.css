@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DevOps Portfolio Design System - Professional Tech Theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light theme - Professional DevOps colors */
+    --background: 220 20% 97%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    /* Primary - Deep DevOps Blue */
+    --primary: 210 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 210 85% 45%;
+
+    /* Secondary - Automation Orange */
+    --secondary: 25 95% 60%;
+    --secondary-foreground: 220 25% 15%;
+
+    /* Muted tones */
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 45%;
+
+    /* Accent - Cloud Teal */
+    --accent: 180 75% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Tech Green for success states */
+    --tech-green: 150 80% 40%;
+    --tech-green-foreground: 0 0% 98%;
+
+    /* Warning/Alert colors */
+    --warning: 40 95% 55%;
+    --warning-foreground: 220 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 210 85% 25%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Dark theme - Dark background with white text only */
+    --background: 0 0% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary - White on dark */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 8%;
+    --primary-glow: 0 0% 90%;
+
+    /* Secondary - Light gray on dark */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent - White */
+    --accent: 0 0% 98%;
+    --accent-foreground: 0 0% 8%;
+
+    /* Tech colors - White variants */
+    --tech-green: 0 0% 85%;
+    --tech-green-foreground: 0 0% 8%;
+
+    --warning: 0 0% 80%;
+    --warning-foreground: 0 0% 8%;
+
+    --destructive: 0 0% 85%;
+    --destructive-foreground: 0 0% 8%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 98%;
+
+    /* Dark gradients - White to gray */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 90%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 10%), hsl(0 0% 12%));
+    
+    /* Dark shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(0 0% 98% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* DevOps Portfolio Utility Classes */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  /* Bubble animation for click effects */
+  .animate-bubble {
+    animation: bubble-float 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+  
+  /* Hover scale utility */
+  .hover-scale {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Glow effect for interactive elements */
+  .glow-on-hover {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .glow-on-hover:hover {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--primary) / 0.2);
+  }
+}
+
+@keyframes bubble-float {
+  0% {
+    transform: scale(0.6) translateY(0);
+    opacity: 0.9;
+  }
+  60% {
+    transform: scale(1.1) translateY(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5) translateY(-30px);
+    opacity: 0;
+  }
+}
