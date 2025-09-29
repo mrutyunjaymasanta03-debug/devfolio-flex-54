@@ -69,13 +69,24 @@ export default function Portfolio({ className }: PortfolioProps) {
           const x = e.clientX;
           const y = e.clientY;
           
+           const colors = [
+            "rgba(255, 107, 107, 0.7)", // Red
+            "rgba(54, 162, 235, 0.7)",  // Blue
+            "rgba(255, 206, 84, 0.7)",  // Yellow
+            "rgba(75, 192, 192, 0.7)",  // Teal
+            "rgba(153, 102, 255, 0.7)", // Purple
+            "rgba(255, 159, 64, 0.7)",  // Orange
+            "rgba(199, 199, 199, 0.7)", // Grey
+            "rgba(83, 102, 255, 0.7)",  // Indigo
+            "rgba(255, 99, 132, 0.7)",  // Pink
+            "rgba(54, 235, 162, 0.7)",  // Green
+          ];
+          
           bubble.style.width = `${size}px`;
           bubble.style.height = `${size}px`;
           bubble.style.left = `${x - size / 2}px`;
           bubble.style.top = `${y - size / 2}px`;
-          bubble.style.background = isDark 
-            ? "rgba(255, 255, 255, 0.6)" 
-            : "rgba(0, 0, 0, 0.4)";
+          bubble.style.background = colors[Math.floor(Math.random() * colors.length)];
           bubble.style.position = "fixed";
           bubble.style.opacity = "0.8";
           bubble.style.transition = "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
