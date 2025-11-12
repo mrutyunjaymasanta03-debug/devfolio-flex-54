@@ -1,7 +1,6 @@
 export const experience = [
   {
-    role: "
-    DevOps Engineer",
+    role: "DevOps Engineer",
     company: "Freelance",
     period: "2022 — Present",
     description: "Leading cloud-native transformation initiatives and building scalable CI/CD pipelines for microservices architecture.",
