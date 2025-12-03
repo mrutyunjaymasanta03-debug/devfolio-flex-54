@@ -472,33 +472,57 @@ export default function Portfolio({ className }: PortfolioProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Looking for DevOps expertise? I'd love to discuss how we can optimize 
-                your infrastructure and accelerate your deployment processes.
+              <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Let's Work Together</h2>
+              <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+                Looking for <span className="text-primary font-semibold">DevOps expertise</span>? I specialize in building robust CI/CD pipelines, 
+                scalable infrastructure, and modern web applications.
               </p>
               
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 border border-primary/20">
+                  <span className="text-primary text-xl">🚀</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">DevOps & Cloud Infrastructure</h4>
+                    <p className="text-sm text-muted-foreground">CI/CD pipelines, Kubernetes, Docker, Terraform, AWS/Azure cloud architecture</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 border border-primary/20">
+                  <span className="text-primary text-xl">💻</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Modern Web Development</h4>
+                    <p className="text-sm text-muted-foreground">React, TypeScript, Node.js, responsive designs, and seamless user experiences</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 border border-primary/20">
+                  <span className="text-primary text-xl">⚡</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">End-to-End Deployment</h4>
+                    <p className="text-sm text-muted-foreground">From code to production - automated testing, monitoring, and zero-downtime deployments</p>
+                  </div>
+                </div>
+              </div>
+              
               <div className="relative rounded-xl overflow-hidden shadow-card mb-8">
-                <img 
+                {/* <img 
                   src={cloudNetwork} 
                   alt="Abstract cloud infrastructure network visualization" 
                   className="w-full h-48 object-cover"
-                />
+                /> */}
                 <div className="absolute inset-0 gradient-hero opacity-40"></div>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <FiMail className="text-primary" />
-                  <span>masanta.mrutyunjay@gmail.com</span>
+                  <span>alex.rodriguez@example.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FiLinkedin className="text-primary" />
-                  <span>linkedin.com/in/mrutyunjay-masanta</span>
+                  <span>linkedin.com/in/alexrodriguez</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FiGithub className="text-primary" />
-                  <span>github.com/mrutyunjayma</span>
+                  <span>github.com/alexrodriguez</span>
                 </div>
               </div>
             </motion.div>
@@ -556,6 +580,7 @@ export default function Portfolio({ className }: PortfolioProps) {
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
