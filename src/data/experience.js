@@ -2,17 +2,17 @@ export const experience = [
   {
     role: "DevOps Engineer",
     company: "Freelance",
-    period: "2022 — Present",
+    period: "2025 — Present",
     description: "Leading cloud-native transformation initiatives and building scalable CI/CD pipelines for microservices architecture.",
     achievements: ["Reduced deployment time by 75%", "Implemented zero-downtime deployments", "Cost optimization saved $200k annually"]
   },
-  // {
-  //   role: "DevOps Engineer",
-  //   company: "CloudScale Solutions",
-  //   period: "2019 — 2022", 
-  //   description: "Automated infrastructure provisioning and implemented comprehensive monitoring solutions for distributed systems.",
-  //   achievements: ["Automated 90% of manual processes", "Improved system uptime to 99.9%", "Built multi-region disaster recovery"]
-  // },
+  {
+    role: "Modern Web Developer",
+    company: "Freelance",
+    period: "2024 — Present", 
+    description: "Design and develop responsive, user-friendly websites and deploy them to production environments, delivering complete end-to-end solutions.",
+    achievements: ["Delivered 5+ client projects using React, Next.js, Tailwind, and Node.js/FastAPI", "Improved website performance to under 2-second load time", "Integrated modern CI/CD workflows for zero-downtime deployments", "Built reusable UI components and improved development speed by 30%"]
+  },
   // {
   //   role: "Systems Administrator",
   //   company: "DataFlow Systems",
