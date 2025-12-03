@@ -514,15 +514,15 @@ export default function Portfolio({ className }: PortfolioProps) {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <FiMail className="text-primary" />
-                  <span>alex.rodriguez@example.com</span>
+                  <span>masanta.mrutyunjay@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FiLinkedin className="text-primary" />
-                  <span>linkedin.com/in/alexrodriguez</span>
+                  <span>linkedin.com/in/mrutyunjay-masanta</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <FiGithub className="text-primary" />
-                  <span>github.com/alexrodriguez</span>
+                  <span>github.com/mrutyunjayma</span>
                 </div>
               </div>
             </motion.div>
