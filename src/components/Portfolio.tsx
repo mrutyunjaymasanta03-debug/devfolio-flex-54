@@ -475,7 +475,7 @@ export default function Portfolio({ className }: PortfolioProps) {
               <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Let's Work Together</h2>
               <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
                 Looking for <span className="text-primary font-semibold">DevOps expertise</span>? I specialize in building robust CI/CD pipelines, 
-                scalable infrastructure, and modern web applications.
+                scalable infrastructure, and <span className="text-primary font-semibold">build modern web applications.</span>
               </p>
               
               <div className="space-y-4 mb-8">
